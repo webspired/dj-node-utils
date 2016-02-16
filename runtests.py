@@ -14,6 +14,7 @@ try:
         },
         ROOT_URLCONF="dj_node_utils.urls",
         INSTALLED_APPS=[
+            "django.contrib.admin",
             "django.contrib.auth",
             "django.contrib.contenttypes",
             "django.contrib.sites",
@@ -21,6 +22,7 @@ try:
         ],
         SITE_ID=1,
         MIDDLEWARE_CLASSES=(),
+        STATICFILES_DIRS = ['./tests']
     )
 
     try:
